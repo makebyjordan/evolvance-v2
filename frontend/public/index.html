@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="A product of emergent.sh" />
+        <meta name="description" content="Evolvance - Agencia tecnológica especializada en asistentes de IA, CRM personalizados y soluciones digitales a medida en Sevilla" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
@@ -21,7 +21,7 @@
         work correctly both with client-side routing and a non-root public URL.
         Learn how to configure a non-root public URL by running `npm run build`.
         -->
-        <title>Emergent | Fullstack App</title>
+        <title>Evolvance | Soluciones Tecnológicas Premium</title>
         <script src="https://assets.emergent.sh/scripts/emergent-main.js"></script>
         <!--
         These two scripts have been added for the Visual Edits, please do not edit or remove them
@@ -169,11 +169,13 @@
             })(document, window.posthog || []);
             posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
                 api_host: "https://us.i.posthog.com",
-                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well,
+                person_profiles: "identified_only",
                 session_recording: {
-                    recordCrossOriginIframes: true,
+                    recordCrossOriginIframes: false,
                     capturePerformance: false,
                 },
+                disable_session_recording: true,
+                capture_performance: false,
             });
         </script>
     </body>
