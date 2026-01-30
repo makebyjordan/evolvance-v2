@@ -1,0 +1,374 @@
+/* Evolvance Brand Identity CSS */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Evolvance Brand Colors */
+  --evolvance-black: #202121;
+  --evolvance-beige: #DBCE97;
+  --evolvance-olive: #605111;
+  --evolvance-gold: #D4AF37;
+  
+  /* Functional Colors */
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #1A1A1A;
+  --bg-card: #252525;
+  --bg-hover: #2A2A2A;
+  
+  /* Text Colors */
+  --text-primary: #FFFFFF;
+  --text-secondary: #DBCE97;
+  --text-muted: #888888;
+  
+  /* Accent Colors for Services */
+  --accent-purple: #987D9C;
+  --accent-blue: #768597;
+  --accent-orange: #BCA182;
+  --accent-pink: #FCC9C7;
+  --accent-green: #b8d1ba;
+  --accent-grey: #E9E1E1;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 5rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(212, 175, 55, 0.1);
+  --shadow-md: 0 4px 16px rgba(212, 175, 55, 0.15);
+  --shadow-lg: 0 8px 32px rgba(212, 175, 55, 0.2);
+  --shadow-gold: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* Typography System */
+body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-museo {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Headings */
+.heading-hero {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.heading-1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+.heading-2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.heading-3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Body Text */
+.body-large {
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.body-medium {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.body-small {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Gold Accent Text */
+.text-gold {
+  color: var(--evolvance-gold);
+}
+
+.text-beige {
+  color: var(--evolvance-beige);
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(135deg, var(--evolvance-gold) 0%, var(--evolvance-beige) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--evolvance-gold);
+  color: var(--evolvance-black);
+  border: none;
+  border-radius: var(--radius-full);
+  padding: 1rem 2rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover {
+  background: var(--evolvance-beige);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--evolvance-beige);
+  border: 2px solid var(--evolvance-beige);
+  border-radius: var(--radius-full);
+  padding: 1rem 2rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--evolvance-beige);
+  color: var(--evolvance-black);
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
+.card-featured {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, rgba(219, 206, 151, 0.05) 100%);
+  border: 2px solid rgba(212, 175, 55, 0.2);
+}
+
+/* Product Cards */
+.product-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--evolvance-gold);
+  box-shadow: var(--shadow-lg);
+}
+
+.product-card-accent-purple {
+  border-color: var(--accent-purple);
+}
+
+.product-card-accent-green {
+  border-color: var(--accent-green);
+}
+
+/* Service Cards */
+.service-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateX(4px);
+  background: var(--bg-hover);
+}
+
+.service-card-purple { border-left-color: var(--accent-purple); }
+.service-card-blue { border-left-color: var(--accent-blue); }
+.service-card-orange { border-left-color: var(--accent-orange); }
+.service-card-pink { border-left-color: var(--accent-pink); }
+.service-card-grey { border-left-color: var(--accent-grey); }
+.service-card-green { border-left-color: var(--accent-green); }
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-gold {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(212, 175, 55, 0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.pulse-gold {
+  animation: pulse-gold 2s infinite;
+}
+
+/* Glassmorphism Effect */
+.glass-card {
+  background: rgba(37, 37, 37, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  border-radius: var(--radius-lg);
+}
+
+/* Gold Divider */
+.gold-divider {
+  height: 2px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent 0%, var(--evolvance-gold) 50%, transparent 100%);
+  margin: var(--space-md) auto;
+}
+
+/* Section Spacing */
+.section-padding {
+  padding: var(--space-2xl) var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: var(--space-2xl) var(--space-xl);
+  }
+}
+
+/* Container */
+.container-custom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding: 0 var(--space-lg);
+  }
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Gold Glow Effect */
+.gold-glow {
+  position: relative;
+}
+
+.gold-glow::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, var(--evolvance-gold), var(--evolvance-beige));
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.gold-glow:hover::after {
+  opacity: 0.5;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--evolvance-gold);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--evolvance-beige);
+}
