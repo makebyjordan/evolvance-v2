@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/demo/static/css/main.2500c218.css",
+    "main.js": "/demo/static/js/main.d8e0e681.js",
+    "static/media/presentacion-vance-avatar-evolvance.mp4": "/demo/static/media/presentacion-vance-avatar-evolvance.0e3c92e812ae16f5a06b.mp4",
+    "static/media/vance-ia-voz-removebg-preview.png": "/demo/static/media/vance-ia-voz-removebg-preview.8ff267063b46324a13f7.png",
+    "index.html": "/demo/index.html",
+    "main.2500c218.css.map": "/demo/static/css/main.2500c218.css.map",
+    "main.d8e0e681.js.map": "/demo/static/js/main.d8e0e681.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2500c218.css",
+    "static/js/main.d8e0e681.js"
+  ]
+}
