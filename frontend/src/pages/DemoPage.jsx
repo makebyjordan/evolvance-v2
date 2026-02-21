@@ -18,6 +18,19 @@ const DemoPage = () => {
     venderas: placeholderText
   });
 
+  const resetSheetData = () => {
+    setSheetData({
+      nombre: placeholderText,
+      nombreCompleto: placeholderText,
+      telefono: placeholderText,
+      mail: placeholderText,
+      ubicacion: placeholderText,
+      financiacion: placeholderText,
+      tiempos: placeholderText,
+      venderas: placeholderText
+    });
+  };
+
   useEffect(() => {
     // Cargar widget de ElevenLabs
     const src = 'https://unpkg.com/@elevenlabs/convai-widget-embed';
@@ -65,7 +78,10 @@ const DemoPage = () => {
                 });
               });
 
-              if (!latestRow) return;
+              if (!latestRow) {
+                resetSheetData();
+                return;
+              }
 
               const cells = latestRow.c || [];
               const nombreCompleto = cells[0]?.v ? String(cells[0].v) : '';
@@ -81,7 +97,11 @@ const DemoPage = () => {
                 financiacion: cells[5]?.v ? String(cells[5].v) : placeholderText,
                 tiempos: cells[7]?.v ? String(cells[7].v) : placeholderText
               });
+            } else {
+              resetSheetData();
             }
+          } else {
+            resetSheetData();
           }
         }
       } catch (error) {
@@ -256,56 +276,46 @@ const DemoPage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center gap-3 p-4 lg:p-6 bg-black/80 backdrop-blur-xl border-r border-white/10 overflow-hidden order-2 lg:order-1">
-          <div className="flex justify-end pr-2 lg:pr-8">
-            <video
-              src={vanceDemoLoop}
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="auto"
-              className="w-[170px] lg:w-[230px] xl:w-[260px] rounded-2xl border border-[#D4AF37]/30 shadow-[0_0_40px_rgba(212,175,55,0.12)]"
-            />
+        <div className="relative flex flex-col p-4 lg:p-6 bg-black/80 backdrop-blur-xl border-r border-white/10 overflow-hidden order-2 lg:order-1">
+          <div className="flex-1 flex flex-col justify-center gap-3">
+            <div className="flex items-center gap-3 text-[#D4AF37] uppercase tracking-[0.3em] text-xs">
+              <img src={vanceIcon} alt="Vance" className="w-5 h-5 object-contain" />
+              Soy Vance, Demo Asistente IA
+            </div>
+
+            <div>
+              <h1 className="text-xl lg:text-2xl font-outfit font-bold leading-tight mb-2">
+                Activa a Vance y observa la automatización en tiempo real
+              </h1>
+              <p className="text-[#DBCE97] text-sm">
+                Vance, quiere que la pruebes para enseñar como por voz gestiona una llamada entrante y actualiza automáticamente
+                los datos operativos en Google Sheets, sin necesidad de intervención humana.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <button
+                className="btn-primary justify-center text-sm gap-2"
+                onClick={handleStartConversation}
+                disabled={!widgetReady}
+              >
+                <ArrowRight className="w-4 h-4" />
+                ¡Inicia conversación con Vance abajo!
+              </button>
+            </div>
+
+            <div className="text-xs text-[#DBCE97]">
+              <p className="font-semibold text-white mb-1">¿Qué verás?</p>
+              <ul className="space-y-1 list-disc list-inside">
+                <li>Captura automática de datos de la llamada.</li>
+                <li>Registro del lead y actualización de estado.</li>
+                <li>Acabe la conversación para que los datos se guarden.</li>
+                <li>*los datos se borran en 30 segundos.</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="flex items-center gap-3 text-[#D4AF37] uppercase tracking-[0.3em] text-xs">
-            <img src={vanceIcon} alt="Vance" className="w-5 h-5 object-contain" />
-            Soy Vance, Demo Asistente IA
-          </div>
-
-          <div>
-            <h1 className="text-xl lg:text-2xl font-outfit font-bold leading-tight mb-2">
-              Activa a Vance y observa la automatización en tiempo real
-            </h1>
-            <p className="text-[#DBCE97] text-sm">
-              Vance, quiere que la pruebes para enseñar como por voz gestiona una llamada entrante y actualiza automáticamente
-              los datos operativos en Google Sheets, sin necesidad de intervención humana.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-3">
-            <button
-              className="btn-primary justify-center text-sm gap-2"
-              onClick={handleStartConversation}
-              disabled={!widgetReady}
-            >
-              <ArrowRight className="w-4 h-4" />
-              ¡Inicia conversación con Vance abajo!
-            </button>
-          </div>
-
-          <div className="text-xs text-[#DBCE97]">
-            <p className="font-semibold text-white mb-1">¿Qué verás?</p>
-            <ul className="space-y-1 list-disc list-inside">
-              <li>Captura automática de datos de la llamada.</li>
-              <li>Registro del lead y actualización de estado.</li>
-              <li>Acabe la conversación para que los datos se guarden.</li>
-              <li>*los datos se borran en 30 segundos.</li>
-            </ul>
-          </div>
-
-          <div className="mt-auto pt-2 flex items-end justify-between gap-4">
+          <div className="mt-auto pt-2 flex items-end justify-between gap-4 pr-[190px] lg:pr-[250px]">
             <button onClick={goBack} className="btn-secondary w-fit text-sm shrink-0">
               Volver al sitio
             </button>
@@ -315,6 +325,18 @@ const DemoPage = () => {
               agent-id="agent_8101kh9twf68e7pr0asgm1m9ahmx"
               style={{ display: 'block', width: '100%', maxWidth: '340px', minHeight: '150px', height: '150px' }}
             ></elevenlabs-convai>
+          </div>
+
+          <div className="pointer-events-none absolute bottom-4 right-4 lg:bottom-6 lg:right-6">
+            <video
+              src={vanceDemoLoop}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="pointer-events-auto w-[170px] lg:w-[230px] xl:w-[250px] rounded-2xl border border-[#D4AF37]/30 shadow-[0_0_40px_rgba(212,175,55,0.12)]"
+            />
           </div>
         </div>
       </div>

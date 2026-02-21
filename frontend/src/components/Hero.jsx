@@ -141,7 +141,7 @@ const Hero = () => {
               </span>
             </div>
             <div aria-hidden className="md:block hidden" />
-            <div className="relative z-30 text-2xl md:text-5xl font-semibold font-outfit drop-shadow-[0_0_22px_rgba(212,175,55,0.4)] leading-tight text-[var(--evolvance-beige)] tracking-wide text-center md:self-end mt-[60px] md:-mt-6 mr-[20px] bg-white/5 border border-white/10 backdrop-blur-sm rounded-2xl px-8 py-8 shadow-[0_0_35px_rgba(212,175,55,0.25)] flex items-center justify-center">
+            <div className="relative z-30 text-2xl md:text-5xl font-semibold font-outfit drop-shadow-[0_0_22px_rgba(212,175,55,0.4)] leading-tight text-[var(--evolvance-beige)] tracking-wide text-center md:self-end mt-[80px] md:mt-[114px] mr-[20px] bg-white/5 border border-white/10 backdrop-blur-sm rounded-2xl px-8 py-8 shadow-[0_0_35px_rgba(212,175,55,0.25)] flex items-center justify-center">
               <span className="bg-gradient-to-r from-[#e6d89d] via-[#D4AF37] to-[#e6d89d] bg-clip-text text-transparent">
                 ¡^^Saludos ^^!
               </span>
