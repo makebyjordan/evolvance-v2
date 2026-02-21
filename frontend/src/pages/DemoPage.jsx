@@ -293,11 +293,6 @@ const DemoPage = () => {
               <ArrowRight className="w-4 h-4" />
               ¡Inicia conversación con Vance abajo!
             </button>
-            <elevenlabs-convai
-              ref={widgetRef}
-              agent-id="agent_8101kh9twf68e7pr0asgm1m9ahmx"
-              style={{ display: 'block', width: '100%', minHeight: '160px', height: '160px' }}
-            ></elevenlabs-convai>
           </div>
 
           <div className="text-xs text-[#DBCE97]">
@@ -313,6 +308,14 @@ const DemoPage = () => {
           <button onClick={goBack} className="btn-secondary w-fit text-sm">
             Volver al sitio
           </button>
+
+          <div className="mt-auto flex justify-end pt-2">
+            <elevenlabs-convai
+              ref={widgetRef}
+              agent-id="agent_8101kh9twf68e7pr0asgm1m9ahmx"
+              style={{ display: 'block', width: '100%', maxWidth: '320px', minHeight: '120px', height: '120px' }}
+            ></elevenlabs-convai>
+          </div>
         </div>
       </div>
     </div>
