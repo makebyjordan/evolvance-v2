@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import vanceIcon from '../media/vance-ia-voz-removebg-preview.png';
+import vanceDemoLoop from '../media/vance-demo-loop.mp4';
 
 const DemoPage = () => {
   const widgetRef = useRef(null);
@@ -127,125 +128,125 @@ const DemoPage = () => {
 
       <div className="relative grid lg:grid-cols-2 h-full">
         {/* Sección del formulario - lado derecho */}
-        <div className="bg-white/5 order-1 lg:order-2 p-4 lg:p-6 overflow-y-auto">
-          <div className="space-y-3">
-            <h2 className="text-xl lg:text-2xl font-outfit font-bold text-white mb-4">Datos en tiempo real</h2>
+        <div className="bg-white/5 order-1 lg:order-2 p-3 lg:p-4 overflow-hidden">
+          <div className="space-y-2">
+            <h2 className="text-lg lg:text-xl font-outfit font-bold text-white mb-2">Datos en tiempo real</h2>
             
             {/* Campo Nombre */}
-            <div className="space-y-1">
-              <label className="text-xs font-outfit text-[#D4AF37] uppercase tracking-wider">Nombre</label>
-              <div className="glass-card p-2 lg:p-3 border border-[#D4AF37]/20">
+            <div className="space-y-0.5">
+              <label className="text-[10px] font-outfit text-[#D4AF37] uppercase tracking-wider">Nombre</label>
+              <div className="glass-card p-2 border border-[#D4AF37]/20">
                 <input
                   type="text"
                   value={sheetData.nombre}
                   readOnly
-                  className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
+                  className="w-full bg-transparent text-white text-xs placeholder-[#DBCE97] outline-none"
                   placeholder="Cargando..."
                 />
               </div>
             </div>
 
             {/* Campo Teléfono */}
-            <div className="space-y-1">
-              <label className="text-xs font-outfit text-[#D4AF37] uppercase tracking-wider">N. Completo</label>
-              <div className="glass-card p-2 lg:p-3 border border-[#D4AF37]/20">
+            <div className="space-y-0.5">
+              <label className="text-[10px] font-outfit text-[#D4AF37] uppercase tracking-wider">N. Completo</label>
+              <div className="glass-card p-2 border border-[#D4AF37]/20">
                 <input
                   type="text"
                   value={sheetData.nombreCompleto}
                   readOnly
-                  className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
+                  className="w-full bg-transparent text-white text-xs placeholder-[#DBCE97] outline-none"
                   placeholder="Cargando..."
                 />
               </div>
             </div>
 
             {/* Campo Teléfono */}
-            <div className="space-y-1">
-              <label className="text-xs font-outfit text-[#D4AF37] uppercase tracking-wider">Teléfono</label>
-              <div className="glass-card p-2 lg:p-3 border border-[#D4AF37]/20">
+            <div className="space-y-0.5">
+              <label className="text-[10px] font-outfit text-[#D4AF37] uppercase tracking-wider">Teléfono</label>
+              <div className="glass-card p-2 border border-[#D4AF37]/20">
                 <input
                   type="text"
                   value={sheetData.telefono}
                   readOnly
-                  className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
+                  className="w-full bg-transparent text-white text-xs placeholder-[#DBCE97] outline-none"
                   placeholder="Cargando..."
                 />
               </div>
             </div>
 
             {/* Campo Mail */}
-            <div className="space-y-1">
-              <label className="text-xs font-outfit text-[#D4AF37] uppercase tracking-wider">Mail</label>
-              <div className="glass-card p-2 lg:p-3 border border-[#D4AF37]/20">
+            <div className="space-y-0.5">
+              <label className="text-[10px] font-outfit text-[#D4AF37] uppercase tracking-wider">Mail</label>
+              <div className="glass-card p-2 border border-[#D4AF37]/20">
                 <input
                   type="email"
                   value={sheetData.mail}
                   readOnly
-                  className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
+                  className="w-full bg-transparent text-white text-xs placeholder-[#DBCE97] outline-none"
                   placeholder="Cargando..."
                 />
               </div>
             </div>
 
             {/* Campo Ubicación */}
-            <div className="space-y-1">
-              <label className="text-xs font-outfit text-[#D4AF37] uppercase tracking-wider">Ubicación</label>
-              <div className="glass-card p-2 lg:p-3 border border-[#D4AF37]/20">
+            <div className="space-y-0.5">
+              <label className="text-[10px] font-outfit text-[#D4AF37] uppercase tracking-wider">Ubicación</label>
+              <div className="glass-card p-2 border border-[#D4AF37]/20">
                 <input
                   type="text"
                   value={sheetData.ubicacion}
                   readOnly
-                  className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
+                  className="w-full bg-transparent text-white text-xs placeholder-[#DBCE97] outline-none"
                   placeholder="Cargando..."
                 />
               </div>
             </div>
 
             {/* Campo Financiación */}
-            <div className="space-y-1">
-              <label className="text-xs font-outfit text-[#D4AF37] uppercase tracking-wider">Financiación</label>
-              <div className="glass-card p-2 lg:p-3 border border-[#D4AF37]/20">
+            <div className="space-y-0.5">
+              <label className="text-[10px] font-outfit text-[#D4AF37] uppercase tracking-wider">Financiación</label>
+              <div className="glass-card p-2 border border-[#D4AF37]/20">
                 <input
                   type="text"
                   value={sheetData.financiacion}
                   readOnly
-                  className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
+                  className="w-full bg-transparent text-white text-xs placeholder-[#DBCE97] outline-none"
                   placeholder="Cargando..."
                 />
               </div>
             </div>
 
             {/* Campo Tiempos */}
-            <div className="space-y-1">
-              <label className="text-xs font-outfit text-[#D4AF37] uppercase tracking-wider">Tiempos</label>
-              <div className="glass-card p-2 lg:p-3 border border-[#D4AF37]/20">
+            <div className="space-y-0.5">
+              <label className="text-[10px] font-outfit text-[#D4AF37] uppercase tracking-wider">Tiempos</label>
+              <div className="glass-card p-2 border border-[#D4AF37]/20">
                 <input
                   type="text"
                   value={sheetData.tiempos}
                   readOnly
-                  className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
+                  className="w-full bg-transparent text-white text-xs placeholder-[#DBCE97] outline-none"
                   placeholder="Cargando..."
                 />
               </div>
             </div>
 
             {/* Campo ¿Venderás? */}
-            <div className="space-y-1">
-              <label className="text-xs font-outfit text-[#D4AF37] uppercase tracking-wider">¿Venderás?</label>
-              <div className="glass-card p-2 lg:p-3 border border-[#D4AF37]/20">
+            <div className="space-y-0.5">
+              <label className="text-[10px] font-outfit text-[#D4AF37] uppercase tracking-wider">¿Venderás?</label>
+              <div className="glass-card p-2 border border-[#D4AF37]/20">
                 <input
                   type="text"
                   value={sheetData.venderas}
                   readOnly
-                  className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
+                  className="w-full bg-transparent text-white text-xs placeholder-[#DBCE97] outline-none"
                   placeholder="Cargando..."
                 />
               </div>
             </div>
 
             {/* Mensaje final */}
-            <div className="mt-4 p-3 lg:p-4 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-xl">
-              <p className="text-sm lg:text-base font-outfit font-semibold text-white mb-1">
+            <div className="mt-2 p-2 lg:p-3 bg-gradient-to-r from-[#D4AF37]/10 to-transparent border border-[#D4AF37]/30 rounded-xl">
+              <p className="text-sm font-outfit font-semibold text-white mb-1">
                 ¡Vé reflejado en tiempo real la información que procesamos por detrás!
               </p>
               <p className="text-xs text-[#DBCE97]">
@@ -255,17 +256,29 @@ const DemoPage = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center gap-4 p-6 lg:p-10 bg-black/80 backdrop-blur-xl border-r border-white/10 overflow-y-auto order-2 lg:order-1">
+        <div className="flex flex-col justify-center gap-3 p-4 lg:p-6 bg-black/80 backdrop-blur-xl border-r border-white/10 overflow-hidden order-2 lg:order-1">
+          <div className="flex justify-end pr-2 lg:pr-8">
+            <video
+              src={vanceDemoLoop}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="w-[170px] lg:w-[230px] xl:w-[260px] rounded-2xl border border-[#D4AF37]/30 shadow-[0_0_40px_rgba(212,175,55,0.12)]"
+            />
+          </div>
+
           <div className="flex items-center gap-3 text-[#D4AF37] uppercase tracking-[0.3em] text-xs">
             <img src={vanceIcon} alt="Vance" className="w-5 h-5 object-contain" />
             Soy Vance, Demo Asistente IA
           </div>
 
           <div>
-            <h1 className="text-2xl lg:text-3xl font-outfit font-bold leading-tight mb-3">
+            <h1 className="text-xl lg:text-2xl font-outfit font-bold leading-tight mb-2">
               Activa a Vance y observa la automatización en tiempo real
             </h1>
-            <p className="text-[#DBCE97] text-sm lg:text-base">
+            <p className="text-[#DBCE97] text-sm">
               Vance, quiere que la pruebes para enseñar como por voz gestiona una llamada entrante y actualiza automáticamente
               los datos operativos en Google Sheets, sin necesidad de intervención humana.
             </p>
@@ -283,7 +296,7 @@ const DemoPage = () => {
             <elevenlabs-convai
               ref={widgetRef}
               agent-id="agent_8101kh9twf68e7pr0asgm1m9ahmx"
-              style={{ display: 'block', width: '100%', minHeight: '280px' }}
+              style={{ display: 'block', width: '100%', minHeight: '160px', height: '160px' }}
             ></elevenlabs-convai>
           </div>
 
@@ -293,7 +306,7 @@ const DemoPage = () => {
               <li>Captura automática de datos de la llamada.</li>
               <li>Registro del lead y actualización de estado.</li>
               <li>Acabe la conversación para que los datos se guarden.</li>
-              <li>*los datos se borran en 120 segundos.</li>
+              <li>*los datos se borran en 30 segundos.</li>
             </ul>
           </div>
 
