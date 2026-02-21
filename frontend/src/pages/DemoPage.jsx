@@ -5,14 +5,16 @@ import vanceIcon from '../media/vance-ia-voz-removebg-preview.png';
 const DemoPage = () => {
   const widgetRef = useRef(null);
   const [widgetReady, setWidgetReady] = useState(false);
+  const placeholderText = 'verás reflejados los datos despues de la llamada...';
   const [sheetData, setSheetData] = useState({
-    nombre: 'verás reflejados los datos despues de la llamada...',
-    telefono: 'verás reflejados los datos despues de la llamada...',
-    mail: 'verás reflejados los datos despues de la llamada...',
-    ubicacion: 'verás reflejados los datos despues de la llamada...',
-    financiacion: 'verás reflejados los datos despues de la llamada...',
-    tiempos: 'verás reflejados los datos despues de la llamada...',
-    venderas: 'verás reflejados los datos despues de la llamada...'
+    nombre: placeholderText,
+    nombreCompleto: placeholderText,
+    telefono: placeholderText,
+    mail: placeholderText,
+    ubicacion: placeholderText,
+    financiacion: placeholderText,
+    tiempos: placeholderText,
+    venderas: placeholderText
   });
 
   useEffect(() => {
@@ -34,13 +36,14 @@ const DemoPage = () => {
     // Función para cargar datos reales de Google Sheets
     const loadRealSheetData = async () => {
       try {
-        // ID de tu Google Sheet y rango de celdas
+        // ID del Google Sheet y lectura de la hoja LEADS
         const sheetId = '1ZT0gyxbLqo7w1yy_r4_B1WzaV6IdPQH4SYAJB3-0yQY';
-        const range = 'Hoja 1!C1:J1'; // Celdas C1, D1, E1, F1, G1, H1, J1
+        const sheetName = 'LEADS';
+        const range = `${sheetName}!C2:J`;
         
         // Usar la API pública de Google Sheets
         const response = await fetch(
-          `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?range=${range}&tqx=out:json`
+          `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?sheet=${encodeURIComponent(sheetName)}&range=${encodeURIComponent(range)}&tqx=out:json`
         );
         
         if (response.ok) {
@@ -52,15 +55,30 @@ const DemoPage = () => {
             const rows = data.table.rows;
             
             if (rows && rows.length > 0) {
-              const cells = rows[0].c;
+              // Usar la ultima fila con datos para reflejar el lead mas reciente
+              const latestRow = [...rows].reverse().find((row) => {
+                const cells = row?.c || [];
+                return cells.some((cell) => {
+                  const value = cell?.v;
+                  return value !== null && value !== undefined && `${value}`.trim() !== '';
+                });
+              });
+
+              if (!latestRow) return;
+
+              const cells = latestRow.c || [];
+              const nombreCompleto = cells[0]?.v ? String(cells[0].v) : '';
+              const nombre = nombreCompleto ? nombreCompleto.split(' ')[0] : '';
+
               setSheetData({
-                nombre: cells[0]?.v || 'verás reflejados los datos despues de la llamada...',
-                telefono: cells[1]?.v || 'verás reflejados los datos despues de la llamada...',
-                mail: cells[2]?.v || 'verás reflejados los datos despues de la llamada...',
-                ubicacion: cells[3]?.v || 'verás reflejados los datos despues de la llamada...',
-                venderas: cells[4]?.v || 'verás reflejados los datos despues de la llamada...', // G1
-                financiacion: cells[5]?.v || 'verás reflejados los datos despues de la llamada...', // H1
-                tiempos: cells[6]?.v || 'verás reflejados los datos despues de la llamada...' // J1
+                nombre: nombre || placeholderText,
+                nombreCompleto: nombreCompleto || placeholderText,
+                telefono: cells[1]?.v ? String(cells[1].v) : placeholderText,
+                mail: cells[2]?.v ? String(cells[2].v) : placeholderText,
+                ubicacion: cells[3]?.v ? String(cells[3].v) : placeholderText,
+                venderas: cells[4]?.v ? String(cells[4].v) : placeholderText,
+                financiacion: cells[5]?.v ? String(cells[5].v) : placeholderText,
+                tiempos: cells[7]?.v ? String(cells[7].v) : placeholderText
               });
             }
           }
@@ -120,6 +138,20 @@ const DemoPage = () => {
                 <input
                   type="text"
                   value={sheetData.nombre}
+                  readOnly
+                  className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
+                  placeholder="Cargando..."
+                />
+              </div>
+            </div>
+
+            {/* Campo Teléfono */}
+            <div className="space-y-1">
+              <label className="text-xs font-outfit text-[#D4AF37] uppercase tracking-wider">N. Completo</label>
+              <div className="glass-card p-2 lg:p-3 border border-[#D4AF37]/20">
+                <input
+                  type="text"
+                  value={sheetData.nombreCompleto}
                   readOnly
                   className="w-full bg-transparent text-white text-sm placeholder-[#DBCE97] outline-none"
                   placeholder="Cargando..."
