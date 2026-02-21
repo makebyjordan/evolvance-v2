@@ -305,15 +305,15 @@ const DemoPage = () => {
             </ul>
           </div>
 
-          <button onClick={goBack} className="btn-secondary w-fit text-sm">
-            Volver al sitio
-          </button>
+          <div className="mt-auto pt-2 flex items-end justify-between gap-4">
+            <button onClick={goBack} className="btn-secondary w-fit text-sm shrink-0">
+              Volver al sitio
+            </button>
 
-          <div className="mt-auto flex justify-end pt-2">
             <elevenlabs-convai
               ref={widgetRef}
               agent-id="agent_8101kh9twf68e7pr0asgm1m9ahmx"
-              style={{ display: 'block', width: '100%', maxWidth: '320px', minHeight: '120px', height: '120px' }}
+              style={{ display: 'block', width: '100%', maxWidth: '340px', minHeight: '150px', height: '150px' }}
             ></elevenlabs-convai>
           </div>
         </div>
