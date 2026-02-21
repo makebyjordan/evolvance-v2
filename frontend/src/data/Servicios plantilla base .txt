@@ -1,0 +1,165 @@
+﻿Servicios
+________________
+
+
+Marketing
+Desarrollo Web Profesional
+* Web básica (landing o 1-3 secciones): 600€ - 900€, con una mensualidad de mantenimiento de 80€ - 150€.
+* Web estándar (5-7 secciones): 1.000€ - 2.000€, con mantenimiento mensual de 150€ - 250€.
+* Web avanzada (multiidioma, blog, integraciones, formación): 2.000€ - 3.500€, con mantenimiento mensual de 250€ - 400€.
+* E-commerce personalizado: 2.000€ - 4.000€, con mensualidad de mantenimiento de 300€ - 600€.
+EMAIL MARKETING:
+-incluye :
+*Definición de objetivos claros y medibles según servicio a vender
+*Construcción de una lista de suscriptores de calidad con diferentes métodos de captación (formularios, lead magnets, RRSS, Eventos)
+*Segmentación de la audiencia
+*Planificar el tipo y frecuencia del contenido
+*Diseñar correos optimizados y persuasivos
+*Realizar Pruebas A/B
+*Medición , analisis y optimización
+-Beneficios clave 
+*El email marketing genera uno de los retornos de la inversión (ROI) más altos del marketing digital.
+*Fomenta la fidelización al construir una relación duradera y de confianza con los clientes.
+*Aumenta el tráfico web de forma muy efectiva dirigiendo a los suscriptores a tu página, blog o tienda online.
+*Incrementa las ventas al promocionar productos y ofertas directamente a un público ya interesado.
+Es una estrategia totalmente medible que te permite saber con precisión cómo interactúan los usuarios con tus correos.
+Tu lista de suscriptores es un canal propio que no depende de los algoritmos de las redes sociales.
+Resulta una estrategia económica y escalable que permite llegar a miles de personas con un coste muy bajo.
+
+
+
+
+Branding, Diseño Gráfico y Copywriting
+* Identidad Visual Básica: 500€ - 700€. Ajustes y piezas extra: 50€.
+* Branding Completo (manual, assets, estrategia visual): 1.200€ - 2.000€, con mantenimiento mensual de 100€ - 200€.
+* Branding + Estrategia de Comunicación: 2.500€ - 3.500€, con mantenimiento mensual de 200€ - 300€.
+   * Incluye: naming, logo con variantes, paleta de colores, tipografía, manual, piezas básicas de comunicación.
+SEO y SEM enfocado en pagina web
+* SEO: 1000€.
+* SEM: 1000€.
+* Pack SEO y SEM: 1500€.
+Campañas de Ads
+* Campaña básica (1-2 objetivos): 600€ - 800€, con mensualidad de 450€ - 600€.
+* Campaña completa (funnels, retargeting): 100€ - 1.500€, con mensualidad de 600€ - 100€.
+* Multicanal (Meta + Google, estrategia avanzada): 2.000€ - 3.000€, con mensualidad de 800€ - 1.200€.
+________________
+
+
+Gestión y Creación de Contenido
+Gestión de Redes Sociales
+* PAQUETE ECONÓMICO - Presupuesto: 150€
+   * 4 publicaciones al mes (feed o stories)
+   * 1 reel al mes
+   * Grabación no incluida
+   * Edición del reel
+   * Diseño gráfico básico
+   * Copywriting básico
+* PROMOCIÓN
+   * Si se contratan 3 meses seguidos: 10% de descuento.
+   * O, primer mes con precio especial para ver resultados.
+* PAQUETE ECONÓMICO PLUS - Presupuesto: 200€
+   * 6 publicaciones al mes (feed o stories)
+   * 2 reels al mes
+   * 1 sesión de grabación cada 3 meses (máx. 1h)
+   * Edición de los 2 reels
+   * Diseño gráfico básico
+   * Copywriting más trabajado
+* PAQUETE BÁSICO - Presupuesto: 350€
+   * Estrategia de contenido
+   * 8 publicaciones al mes (feed + stories)
+   * 4 reels al mes
+   * 1 sesión de grabación al mes (máx. 1h)
+   * Edición de los 4 reels
+   * Diseño gráfico básico
+   * Copywriting
+   * Análisis mensual
+* PAQUETE INTERMEDIO - Presupuesto: 600€
+   * Todo lo del PAQUETE BÁSICO +
+   * 12 publicaciones al mes
+   * 6 reels al mes
+   * 2 sesiones de grabación al mes (máx. 1,5h cada una)
+   * Edición de los 6 reels
+   * Gestión de comunidad (responder mensajes y comentarios)
+   * Publicidad básica
+* PAQUETE COMPLETO - Presupuesto: 1.000€
+   * Todo lo del PAQUETE INTERMEDIO +
+   * 16 publicaciones al mes
+   * 8 reels al mes
+   * 4 sesiones de grabación al mes (1 por semana, máx. 2h cada una)
+   * Edición de los 8 reels + 1 video largo
+   * Publicidad avanzada
+   * Producción audiovisual más elaborada
+________________
+
+
+Automatizaciones e IA
+Chatbot
+* Asistente simple (comandos básicos): 1.000€ - 1.500€.
+* Asistente avanzado (diálogos complejos, integraciones): 2.500€ - 4.500€.
+* Asistente con IA generativa + backend propio (conectado al CRM): 5.000€ - 8.000€.
+Asistente de Voz
+* Asistente simple (comandos básicos): 1.000€ - 1.500€.
+* Asistente avanzado (diálogos complejos, integraciones): 2.500€ - 4.500€.
+* Asistente con IA generativa + backend propio (conectado al CRM): 5.000€ - 8.000€.
+Automatizaciones
+* Marketing y Ventas
+   * Análisis Predictivo de Ventas: Utilizar IA para analizar datos históricos y predecir futuras ventas, identificar qué clientes tienen más probabilidades de comprar (lead scoring) y optimizar el embudo de conversión.
+   * Personalización de la Experiencia del Cliente (Hiper-personalización): Implementación de sistemas que adaptan el contenido web, las ofertas de productos y las comunicaciones de marketing en tiempo real para cada usuario individual.
+   * Generación de Contenido con IA: Creación automática de textos para redes sociales, descripciones de productos, correos electrónicos de marketing o incluso borradores de artículos de blog.
+   * Optimización de Campañas Publicitarias (Ad-Tech): Uso de IA para gestionar y optimizar automáticamente las pujas, la segmentación de audiencias y la asignación de presupuesto en plataformas como Google Ads o Meta Ads.
+* Operaciones y Logística
+   * Visión por Computador para Control de Calidad: Implementación de cámaras y algoritmos de IA en líneas de producción para detectar defectos en productos de forma automática y precisa.
+   * Optimización de Rutas y Logística: Sistemas de IA que calculan las rutas de reparto más eficientes en tiempo real, considerando el tráfico, las condiciones meteorológicas y la capacidad de los vehículos.
+   * Mantenimiento Predictivo: Colocación de sensores en maquinaria industrial para que la IA analice los datos de funcionamiento y prediga cuándo una pieza va a fallar, permitiendo un mantenimiento proactivo.
+   * Reconocimiento Óptico de Caracteres (OCR) Inteligente: Extracción y clasificación automática de datos de documentos no estructurados como facturas, albaranes, contratos o currículums, integrándolos directamente en los sistemas de la empresa.
+* Finanzas y Administración
+   * Detección de Fraude: Implementación de modelos de IA que analizan transacciones en tiempo real para identificar patrones anómalos y prevenir actividades fraudulentas.
+   * Análisis de Riesgo Crediticio: Desarrollo de sistemas que evalúan la solvencia de un cliente de forma más rápida y precisa analizando múltiples variables.
+   * Conciliación Bancaria Inteligente: Automatización del proceso de cotejar los registros contables internos con los extractos bancarios, identificando discrepancias automáticamente.
+* Recursos Humanos
+   * Automatización del Proceso de Contratación: Creación de flujos de trabajo que publican ofertas de empleo en múltiples portales, filtran currículums según palabras clave y programan automáticamente las primeras entrevistas.
+   * Onboarding y Offboarding de Empleados: Automatización de las tareas asociadas a la incorporación de un nuevo empleado (creación de cuentas, asignación de equipos, envío de documentación) y a su salida de la empresa.
+   * Gestión Automatizada de Nóminas y Ausencias: Sistemas que calculan automáticamente las nóminas, gestionan las solicitudes de vacaciones, bajas por enfermedad y permisos, y actualizan los registros correspondientes.
+* Atención al Cliente
+   * Sistemas de Ticketing Inteligentes: Automatización de la recepción, clasificación y asignación de solicitudes de soporte al agente o departamento adecuado basándose en el contenido del mensaje.
+   * Análisis de Sentimiento: Herramientas que analizan automáticamente las interacciones con los clientes (correos, chats, reseñas) para medir su nivel de satisfacción e identificar problemas de forma proactiva.
+   * Respuestas Automáticas a Preguntas Frecuentes (FAQ): Integración en el correo electrónico o sistemas de soporte de un bot que identifica preguntas recurrentes y envía respuestas predefinidas, liberando a los agentes humanos.
+* Gestión de TI y Operaciones Internas
+   * Automatización de Informes (Reporting): Creación de procesos que recopilan datos de diversas fuentes (CRM, ERP, Google Analytics) y generan informes diarios, semanales o mensuales de forma automática.
+   * Gestión de Infraestructura de TI: Scripts y plataformas que automatizan tareas como la creación de copias de seguridad, el monitoreo del estado de los servidores, la gestión de usuarios y el despliegue de software.
+________________
+
+
+Programación
+* Programación a Medida para tu Negocio
+________________
+* * CRM a Medida Un CRM (sistema de gestión de clientes) hecho solo para ti. Te ayuda a organizar toda la información de tus clientes y automatizar tus ventas, marketing y servicio. El resultado: un negocio más rentable y clientes más fieles.
+________________
+* * Aplicación Móvil Desarrollamos una app móvil para tus clientes o empleados. Ya sea para que tus clientes compren más fácil o para que tu equipo trabaje desde cualquier lugar, esta app te ayuda a estar en el bolsillo de tu público.
+________________
+* * Web de Gestión de Proyectos Crea una página web privada para tu empresa. Centraliza todos tus proyectos, documentos y tareas en un solo lugar, para que tu equipo trabaje de forma más organizada y eficiente, sin perder tiempo en correos o reuniones.
+________________
+* * Web + CRM Integrado Combina una página web profesional con un CRM adaptado a tu sector. Cada cliente que llegue a tu web quedará registrado automáticamente en tu base de datos, lo que te permite dar un seguimiento perfecto y nunca perder una oportunidad de venta.
+________________
+* * Ciberseguridad
+________________
+* * Servicios de Ciberseguridad Te ayudamos a proteger tu negocio de ataques, virus y robos de información. Analizamos tus sistemas, detectamos vulnerabilidades y te damos las herramientas para que tu información y la de tus clientes estén siempre seguras. El objetivo: que te centres en tu negocio, sabiendo que estás protegido.
+
+
+________________
+
+
+Realidad Virtual
+* Tour virtual de 8 tomas estereoscópicas (efecto 3D): 780€.
+* Entorno 3D puro y duro a escala real con tour virtual: 1.400€.
+* Actividades y experiencias de realidad virtual para eventos.
+* Recreación histórica de un entorno (área de 500 m²): 4.000€.
+* Modelado de objetos OBJ desde 0: 380€; con textura: 400€.
+* Modelo OBJ solo texturizado: 200€ por modelo.
+   * Nota: Servicios de VR con IVA aparte.
+________________
+
+
+Sectores de Enfoque:
+* Administraciones públicas
+* Gastronomía

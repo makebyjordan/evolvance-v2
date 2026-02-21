@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/demo/static/css/main.14b24b92.css",
-    "main.js": "/demo/static/js/main.16d62044.js",
+    "main.js": "/demo/static/js/main.f7384fb0.js",
     "static/media/presentacion-vance-avatar-evolvance.mp4": "/demo/static/media/presentacion-vance-avatar-evolvance.0e3c92e812ae16f5a06b.mp4",
     "static/media/vance-ia-voz-removebg-preview.png": "/demo/static/media/vance-ia-voz-removebg-preview.8ff267063b46324a13f7.png",
     "index.html": "/demo/index.html",
     "main.14b24b92.css.map": "/demo/static/css/main.14b24b92.css.map",
-    "main.16d62044.js.map": "/demo/static/js/main.16d62044.js.map"
+    "main.f7384fb0.js.map": "/demo/static/js/main.f7384fb0.js.map"
   },
   "entrypoints": [
     "static/css/main.14b24b92.css",
-    "static/js/main.16d62044.js"
+    "static/js/main.f7384fb0.js"
   ]
 }

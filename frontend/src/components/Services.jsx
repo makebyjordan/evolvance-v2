@@ -1,14 +1,14 @@
 import React from 'react';
-import { Database, Globe, Target, Sparkles, Code, Smartphone } from 'lucide-react';
+import { PhoneCall, MessageCircle, Plug, GitBranch, Activity, BarChart3 } from 'lucide-react';
 import { services } from '../data/mockData';
 
 const iconMap = {
-  Database,
-  Globe,
-  Target,
-  Sparkles,
-  Code,
-  Smartphone
+  PhoneCall,
+  MessageCircle,
+  Plug,
+  GitBranch,
+  Activity,
+  BarChart3
 };
 
 const Services = () => {
@@ -21,15 +21,15 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <span className="font-outfit text-sm uppercase tracking-widest text-[#D4AF37] font-semibold mb-4 block">
-            Servicios Completos
+            Servicios orientados a resultados
           </span>
           <h2 className="heading-1 mb-4">
-            Soluciones tecnológicas{' '}
-            <span className="text-gradient">para cada necesidad</span>
+            Automatizaciones IA que{' '}
+            <span className="text-gradient">liberan a tus equipos</span>
           </h2>
           <div className="gold-divider"></div>
           <p className="body-large max-w-2xl mx-auto mt-6">
-            Desde la estrategia hasta la implementación, te acompañamos en cada paso de tu transformación digital
+            Diseñamos asistentes de voz, chat IA e integraciones que reducen tiempos de atención, priorizan leads calientes y actualizan tus sistemas en segundos.
           </p>
         </div>
 
@@ -52,17 +52,6 @@ const Services = () => {
                 <h3 className="heading-3 text-white mb-3">{service.title}</h3>
                 <p className="body-medium text-[#DBCE97]">{service.description}</p>
 
-                {/* Learn More Link */}
-                <button
-                  onClick={() => {
-                    const element = document.querySelector('#contacto');
-                    if (element) element.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="mt-4 font-outfit text-sm font-semibold text-[#D4AF37] hover:text-[#DBCE97] transition-colors inline-flex items-center gap-2 group"
-                >
-                  Más información
-                  <span className="group-hover:translate-x-1 transition-transform">→</span>
-                </button>
               </div>
             );
           })}
@@ -70,13 +59,13 @@ const Services = () => {
 
         {/* Process Section */}
         <div className="mt-20 max-w-5xl mx-auto">
-          <h3 className="heading-2 text-center mb-12">Nuestro proceso</h3>
+          <h3 className="heading-2 text-center mb-12">Cómo entregamos impacto medible</h3>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { step: '01', title: 'Análisis', desc: 'Estudiamos tu negocio en profundidad' },
-              { step: '02', title: 'Estrategia', desc: 'Diseñamos la solución a medida' },
-              { step: '03', title: 'Desarrollo', desc: 'Construimos con calidad premium' },
-              { step: '04', title: 'Acompañamiento', desc: 'Soporte continuo post-lanzamiento' }
+              { step: '01', title: 'Diagnóstico', desc: 'Mapeamos tus flujos de llamadas y cuellos de botella' },
+              { step: '02', title: 'Diseño', desc: 'Definimos casos de uso y KPIs orientados a negocio' },
+              { step: '03', title: 'Implementación', desc: 'Conectamos asistentes, CRM y centralitas' },
+              { step: '04', title: 'Optimización', desc: 'Medimos resultados y escalamos automatizaciones' }
             ].map((item, index) => (
               <div
                 key={index}

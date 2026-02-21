@@ -61,23 +61,26 @@ const FeaturedProducts = () => {
                   ))}
                 </div>
 
-                {/* Demo Button */}
-                <button
-                  onClick={() => setActiveDemo(activeDemo === product.id ? null : product.id)}
-                  className="btn-primary w-full justify-center group"
-                >
-                  {activeDemo === product.id ? (
-                    <>
-                      <Pause className="w-4 h-4" />
-                      Detener Demo
-                    </>
-                  ) : (
-                    <>
-                      <Play className="w-4 h-4" />
-                      Ver Demo Interactiva
-                    </>
-                  )}
-                </button>
+                {/* Demo Button / Calendly link when activa */}
+                {activeDemo === product.id ? (
+                  <a
+                    href="https://calendly.com/admin-evol-vance/evolweb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary w-full justify-center group"
+                  >
+                    <Pause className="w-4 h-4" />
+                    CITA PARA HABLAR DE IA PARA WHATSAPP
+                  </a>
+                ) : (
+                  <button
+                    onClick={() => setActiveDemo(activeDemo === product.id ? null : product.id)}
+                    className="btn-primary w-full justify-center group"
+                  >
+                    <Play className="w-4 h-4" />
+                    Ver Demo Interactiva
+                  </button>
+                )}
 
                 {/* Demo Interface */}
                 {activeDemo === product.id && (
@@ -101,15 +104,14 @@ const FeaturedProducts = () => {
             <p className="body-medium mb-6">
               Agenda una consultoría gratuita y descubre cómo nuestros asistentes de IA pueden transformar tu empresa
             </p>
-            <button
-              onClick={() => {
-                const element = document.querySelector('#contacto');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
-              }}
+            <a
+              href="https://calendly.com/admin-evol-vance/evolweb"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
             >
-              Agendar Consultoría Gratuita
-            </button>
+              CITA PARA HABLAR DE IA PARA WHATSAPP
+            </a>
           </div>
         </div>
       </div>

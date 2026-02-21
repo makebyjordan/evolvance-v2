@@ -17,8 +17,13 @@ const CaseStudies = () => {
           </h2>
           <div className="gold-divider"></div>
           <p className="body-large max-w-2xl mx-auto mt-6">
-            Resultados reales de clientes que confiaron en Evolvance para transformar su negocio
+            Resultados reales de clientes que confiaron en Evolvance para transformar su negocio.
           </p>
+        </div>
+
+        {/* Results Question */}
+        <div className="text-center mb-12">
+          <h3 className="heading-3 text-white">¿Quieres resultados como estos?</h3>
         </div>
 
         {/* Case Studies Grid */}
@@ -63,6 +68,13 @@ const CaseStudies = () => {
           ))}
         </div>
 
+        <div className="text-center mt-8">
+          <p className="body-medium italic mt-4w">
+          
+            ...entre otros...
+          </p>
+        </div>
+
         {/* CTA */}
         <div className="text-center mt-16">
           <div className="inline-block glass-card p-8 max-w-2xl">
@@ -70,15 +82,14 @@ const CaseStudies = () => {
             <p className="body-medium mb-6">
               Cada proyecto es único. Contáctanos para una consultoría gratuita y descubre cómo podemos ayudarte
             </p>
-            <button
-              onClick={() => {
-                const element = document.querySelector('#contacto');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
-              }}
+            <a
+              href="https://calendly.com/admin-evol-vance/evolweb"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
             >
               Consultoría Gratuita
-            </button>
+            </a>
           </div>
         </div>
       </div>

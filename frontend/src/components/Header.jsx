@@ -31,16 +31,12 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-black/90 backdrop-blur-lg shadow-lg border-b border-[#D4AF37]/20'
-          : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black shadow-lg border-b border-[#D4AF37]/20`}
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('#hero'); }} className="flex items-center space-x-3 group">
+          <a href="/" className="flex items-center space-x-3 group">
             <img
               src="https://customer-assets.emergentagent.com/job_2d5da32d-c8d7-4484-9889-ef5971ddb3aa/artifacts/et1hsjc0_logo%2Btexto-evolvance.png"
               alt="Evolvance"
@@ -49,7 +45,7 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -63,19 +59,21 @@ const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
-            <button
-              onClick={() => scrollToSection('#contacto')}
+          <div className="hidden lg:block">
+            <a
+              href="https://calendly.com/admin-evol-vance/evolweb"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
             >
               Consultoría Gratuita
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-[#D4AF37] hover:text-[#DBCE97] transition-colors"
+            className="lg:hidden text-[#D4AF37] hover:text-[#DBCE97] transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -84,7 +82,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-20 left-0 right-0 bg-black/95 backdrop-blur-lg border-b border-[#D4AF37]/20 animate-fade-in-up">
+          <div className="lg:hidden absolute top-20 left-0 right-0 bg-black/95 backdrop-blur-lg border-b border-[#D4AF37]/20 animate-fade-in-up">
             <nav className="flex flex-col space-y-4 p-6">
               {navLinks.map((link) => (
                 <a
@@ -96,12 +94,14 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
-              <button
-                onClick={() => scrollToSection('#contacto')}
+              <a
+                href="https://calendly.com/admin-evol-vance/evolweb"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary w-full justify-center mt-4"
               >
                 Consultoría Gratuita
-              </button>
+              </a>
             </nav>
           </div>
         )}

@@ -251,18 +251,16 @@ ${formData.message}
             <div className="card overflow-hidden">
               <h3 className="heading-3 text-white mb-4 px-6 pt-6">Nuestra ubicación</h3>
               <div className="relative h-64 bg-[#1A1A1A]">
-                <a
-                  href={companyInfo.location.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute inset-0 flex items-center justify-center group"
-                >
-                  <div className="text-center">
-                    <MapPin className="w-12 h-12 text-[#D4AF37] mx-auto mb-3 group-hover:scale-110 transition-transform" />
-                    <p className="font-outfit text-sm font-semibold text-white mb-1">Torres Torneo, Sevilla</p>
-                    <p className="body-small text-[#D4AF37]">Ver en Google Maps →</p>
-                  </div>
-                </a>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.5190911161994!2d-5.9739344!3d37.4248403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1269b9dab8c225%3A0xed21985d3ca9c8c7!2sEvolvance!5e0!3m2!1ses!2ses!4v1769736359915!5m2!1ses!2ses" 
+                  width="100%" 
+                  height="100%" 
+                  style={{border: 0}} 
+                  allowFullScreen="" 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Mapa de ubicación de Evolvance"
+                ></iframe>
               </div>
             </div>
 
@@ -281,6 +279,18 @@ ${formData.message}
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Image Section */}
+        <div className="mt-12 max-w-6xl mx-auto">
+          <h3 className="heading-2 text-center mb-6">
+            ¡Estamos en <span className="text-gradient">Sevilla</span>!
+          </h3>
+          <img 
+            src="https://iili.io/Kpn2Nqu.png" 
+            alt="Contact" 
+            className="w-full rounded-lg shadow-2xl"
+          />
         </div>
       </div>
     </section>

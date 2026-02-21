@@ -15,9 +15,19 @@ ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
 # MongoDB connection
-mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+mongo_url = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
+db_name = os.environ.get('DB_NAME', 'test_database')
+
+_memory_status_checks: List[dict] = []
+client = None
+db = None
+
+try:
+    client = AsyncIOMotorClient(mongo_url, serverSelectionTimeoutMS=1500)
+    db = client[db_name]
+except Exception:
+    client = None
+    db = None
 
 # Create the main app without a prefix
 app = FastAPI()
@@ -51,13 +61,20 @@ async def create_status_check(input: StatusCheckCreate):
     doc = status_obj.model_dump()
     doc['timestamp'] = doc['timestamp'].isoformat()
     
+    if db is None:
+        _memory_status_checks.append(doc)
+        return status_obj
+
     _ = await db.status_checks.insert_one(doc)
     return status_obj
 
 @api_router.get("/status", response_model=List[StatusCheck])
 async def get_status_checks():
-    # Exclude MongoDB's _id field from the query results
-    status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
+    if db is None:
+        status_checks = list(_memory_status_checks)
+    else:
+        # Exclude MongoDB's _id field from the query results
+        status_checks = await db.status_checks.find({}, {"_id": 0}).to_list(1000)
     
     # Convert ISO string timestamps back to datetime objects
     for check in status_checks:
@@ -86,4 +103,5 @@ logger = logging.getLogger(__name__)
 
 @app.on_event("shutdown")
 async def shutdown_db_client():
-    client.close()
+    if client is not None:
+        client.close()

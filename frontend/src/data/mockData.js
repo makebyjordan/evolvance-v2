@@ -1,13 +1,19 @@
 // Mock data para Evolvance
 
 export const heroData = {
-  announcement: "Soluciones Tecnológicas Premium",
-  title: "Evoluciona tu negocio con tecnología a medida",
-  subtitle: "Diseñamos y desarrollamos soluciones digitales personalizadas que impulsan el crecimiento de tu empresa mediante IA, automatización y acompañamiento estratégico.",
+  announcement: "Automatizaciones para inmobiliarias y call centers",
+  title: "Asistentes IA que atienden tus llamadas y convierten leads",
+  subtitle:
+    "Automatizamos cada llamada con asistentes de voz, chat IA e integraciones que responden al instante, agendan visitas y actualizan tu CRM sin ampliar equipo.",
+  bullets: [
+    "Reduce tiempos de atención en cada llamada",
+    "Experiencia 24/7 que agenda visitas y seguimientos",
+    "Integración directa con CRM, centralita y reporting"
+  ],
   backgroundImage: "https://images.pexels.com/photos/20877155/pexels-photo-20877155.jpeg",
   cta: {
-    primary: "Solicitar consultoría",
-    secondary: "Ver servicios"
+    primary: "Prueba nuestro asistente",
+    secondary: "Habla con un consultor"
   }
 };
 
@@ -42,47 +48,157 @@ export const featuredProducts = [
   }
 ];
 
+export const problemSolutionData = {
+  title: "El reto de atender cientos de llamadas sin automatización",
+  description:
+    "Inmobiliarias y empresas con centralitas saturadas pierden oportunidades por tiempos muertos, seguimiento manual y falta de trazabilidad.",
+  industries: [
+    {
+      id: 1,
+      icon: "Building2",
+      title: "Inmobiliarias",
+      challenges: [
+        "Más de 80 llamadas diarias con preguntas repetidas",
+        "Agenda de visitas y llaves gestionada a mano",
+        "Leads que se enfrían antes de recibir respuesta"
+      ],
+      outcome: "Asistentes IA que agendan citas, capturan interés y actualizan el CRM al instante."
+    },
+    {
+      id: 2,
+      icon: "Headphones",
+      title: "Empresas con alta carga telefónica",
+      challenges: [
+        "Equipos ocupados en tareas de baja complejidad",
+        "Falta de visibilidad en qué llamadas convierten",
+        "Seguimientos tardíos que reducen cierres"
+      ],
+      outcome: "Automatización de reservas, avisos y priorización de leads calientes con reporting 24/7."
+    }
+  ],
+  solutionHighlights: [
+    {
+      id: 1,
+      title: "Asistentes de voz y chat IA",
+      description: "Contestan, verifican datos y continúan la conversación en cualquier canal."
+    },
+    {
+      id: 2,
+      title: "Workflows inteligentes",
+      description: "Orquestan llamadas salientes, recordatorios y actualizaciones sin intervención humana."
+    },
+    {
+      id: 3,
+      title: "Integración total",
+      description: "Conectamos CRM, centralita y Google Sheets para que cada interacción sea medible."
+    }
+  ]
+};
+
+export const benefits = [
+  {
+    title: "Reducción de tiempos de respuesta",
+    description: "Atiende al instante y prioriza por intención real."
+  },
+  {
+    title: "Más leads cualificados",
+    description: "Filtrado automático antes de pasar al equipo comercial."
+  },
+  {
+    title: "Atención 24/7",
+    description: "Sin ampliar plantilla ni extender turnos."
+  },
+  {
+    title: "Integración con tus sistemas",
+    description: "Todo queda registrado en CRM, PBX o BI."
+  },
+  {
+    title: "Mejora de satisfacción",
+    description: "Experiencia consistente que refuerza la marca."
+  },
+  {
+    title: "Paneles e informes en vivo",
+    description: "Decisiones basadas en datos actualizados al segundo."
+  }
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    company: "Grupo Habita",
+    industry: "Agencia inmobiliaria",
+    quote:
+      "Reducimos un 65% el tiempo medio de respuesta y duplicamos las visitas confirmadas. El asistente agenda, actualiza el CRM y nos entrega leads listos para cerrar.",
+    author: "María Cebrián",
+    role: "Directora Comercial",
+    metric: "+48% leads cualificados"
+  },
+  {
+    id: 2,
+    company: "CallOn24",
+    industry: "Centro de llamadas",
+    quote:
+      "Automatizamos las peticiones repetitivas y el equipo ahora se enfoca en ventas consultivas. El reporte en Sheets nos muestra en tiempo real qué campañas convierten mejor.",
+    author: "Javier Moreno",
+    role: "Head of Operations",
+    metric: "-40% costes operativos"
+  }
+];
+
+export const finalCTA = {
+  title: "Convierte cada llamada en una oportunidad rentable",
+  description:
+    "Implementa asistentes IA, automatizaciones y reporting conectado a tus sistemas en menos de 30 días.",
+  button: "Reservar demo personalizada"
+};
+
 export const services = [
   {
     id: 1,
-    icon: "Database",
-    title: "CRM Personalizado",
-    description: "Sistemas de gestión de clientes diseñados específicamente para tu flujo de trabajo, sin funcionalidades innecesarias.",
+    icon: "PhoneCall",
+    title: "Asistente de voz inteligente",
+    description:
+      "Atiende llamadas, verifica datos y agenda visitas de manera autónoma manteniendo el tono humano de tu marca.",
     color: "purple"
   },
   {
     id: 2,
-    icon: "Globe",
-    title: "Desarrollo Web 2.0",
-    description: "Sitios web modernos, responsivos y optimizados que convierten visitantes en clientes.",
+    icon: "MessageCircle",
+    title: "Chatbot con IA conversacional",
+    description:
+      "Captura leads y resuelve consultas en web y WhatsApp con respuestas guiadas por intención y reglas comerciales.",
     color: "blue"
   },
   {
     id: 3,
-    icon: "Target",
-    title: "Captación de Leads",
-    description: "Estrategias personalizadas de generación de clientes potenciales con automatización y análisis en tiempo real.",
+    icon: "Plug",
+    title: "Integración con CRM y sistemas",
+    description:
+      "Sincronizamos asistente y centralita con tu CRM, PMS o ERP para que cada dato quede registrado al instante.",
     color: "orange"
   },
   {
     id: 4,
-    icon: "Sparkles",
-    title: "Construcción de Marca",
-    description: "Identidad corporativa completa, desde el diseño hasta la estrategia de comunicación.",
+    icon: "GitBranch",
+    title: "Automatización de llamadas y flujos",
+    description:
+      "Diseñamos workflows que disparan recordatorios, seguimientos y cambios de estado sin intervención manual.",
     color: "pink"
   },
   {
     id: 5,
-    icon: "Code",
-    title: "Desarrollo de Software",
-    description: "Aplicaciones web y móviles a medida con las últimas tecnologías y mejores prácticas.",
+    icon: "Activity",
+    title: "Análisis de sentimiento y scoring",
+    description:
+      "Detectamos urgencia, intención de compra y calidad del lead para priorizar oportunidades con mayor ROI.",
     color: "grey"
   },
   {
     id: 6,
-    icon: "Smartphone",
-    title: "Apps Móviles",
-    description: "Aplicaciones nativas e híbridas que tus usuarios amarán usar cada día.",
+    icon: "BarChart3",
+    title: "Paneles e informes en tiempo real",
+    description:
+      "Dashboards conectados a Google Sheets y BI que muestran volumen de llamadas, conversiones y SLA en vivo.",
     color: "blue"
   }
 ];
@@ -113,27 +229,27 @@ export const brandValues = [
 export const caseStudies = [
   {
     id: 1,
-    client: "E-commerce Retail",
-    title: "Automatización de ventas con IA",
-    description: "Incremento del 340% en conversión mediante asistente de WhatsApp que gestiona consultas, envía catálogos y procesa pedidos automáticamente.",
-    results: "+340% conversión, 24/7 disponibilidad",
-    image: "https://images.pexels.com/photos/270373/pexels-photo-270373.jpeg"
+    client: "Nuestas IAs y Startups",
+    title: "Desarrollamos nuestras locuras",
+    description: "Creamos nuestras locuras con IA y nuestras startups con tecnología. Para arreglar problemas y resolver necesidades.",
+    results: "+340% productividad con IA, 24/7 locos!",
+    image: "https://iili.io/qHrATfS.png"
   },
   {
     id: 2,
-    client: "Clínica Médica",
-    title: "CRM y captación de pacientes",
-    description: "Sistema personalizado que redujo tiempo de gestión en 60% y aumentó captación de nuevos pacientes en 180%.",
-    results: "-60% tiempo gestión, +180% pacientes",
-    image: "https://images.unsplash.com/photo-1531498860502-7c67cf02f657"
+    client: "Inmobiliaria",
+    title: "Percent Servicios Inmobiliarios",
+    description: "Redujimos el tiempo de gestión en +200% y aumentó la atención profesional por el gran volumen de peticiones de clientes.",
+    results: "+200% respuesta rapida, +180% eficencia",
+    image: "https://iili.io/qHrzBnI.jpg"
   },
   {
     id: 3,
-    client: "Bufete Legal",
-    title: "Asistente por voz para consultas",
-    description: "Sistema de atención que gestiona primeras consultas, agenda citas y califica leads automáticamente.",
-    results: "+200% leads calificados",
-    image: "https://images.pexels.com/photos/374559/pexels-photo-374559.jpeg"
+    client: "Carlos Reina Asesores",
+    title: "Marca completa personalizada",
+    description: "Sistema de gestión de clientes, asistente de voz y chat IA, automatizaciones y reporting en tiempo real. Mas una App para su negocio.",
+    results: "Personalizado para su negocio",
+    image: "https://iili.io/qHrILXV.png"
   }
 ];
 
@@ -142,7 +258,7 @@ export const companyInfo = {
   tagline: "Soluciones tecnológicas premium a medida",
   description: "Empresa tecnológica especializada en el diseño y desarrollo de soluciones digitales personalizadas para empresas que buscan crecer, optimizar procesos y diferenciarse dentro de su sector.",
   location: {
-    address: "Torres Torneo, Sevilla",
+    address: "C. Astronomía, 1, torre 2 , planta 8 , modulo 2, Norte, 41015 Sevilla",
     googleMapsUrl: "https://maps.app.goo.gl/NDiwYgWddM9RMlZb1",
     coordinates: {
       lat: 37.4023,
@@ -150,13 +266,13 @@ export const companyInfo = {
     }
   },
   contact: {
-    email: "contacto@evolvance.es",
-    phone: "+34 XXX XXX XXX"
+    email: "admin@evolvance.es",
+    phone: "+34 613 97 00 23"
   },
   social: {
-    linkedin: "#",
-    instagram: "#",
-    twitter: "#"
+    linkedin: "https://www.linkedin.com/company/evolvance-es/",
+    instagram: "https://www.instagram.com/evol_vance/",
+    twitter: "https://x.com/evolvanceIA"
   }
 };
 

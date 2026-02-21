@@ -51,9 +51,13 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-[#D4AF37]/10 hover:bg-[#D4AF37] flex items-center justify-center transition-all group"
-                aria-label="Twitter"
+                aria-label="X (Twitter)"
               >
-                <Twitter className="w-5 h-5 text-[#D4AF37] group-hover:text-[#202121] transition-colors" />
+                <img 
+                  src="https://img.icons8.com/?size=100&id=de4vjQ6J061l&format=png&color=D4AF37" 
+                  alt="X" 
+                  className="w-5 h-5 group-hover:brightness-0 group-hover:invert transition-all"
+                />
               </a>
               <a
                 href={`mailto:${companyInfo.contact.email}`}
@@ -131,11 +135,11 @@ const Footer = () => {
             © {currentYear} Evolvance. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-6">
-            <a href="#" className="body-small text-[#888] hover:text-[#D4AF37] transition-colors">
+            <a href="/privacidad" className="body-small text-[#888] hover:text-[#D4AF37] transition-colors">
               Política de Privacidad
             </a>
-            <a href="#" className="body-small text-[#888] hover:text-[#D4AF37] transition-colors">
-              Términos de Servicio
+            <a href="/aviso-legal" className="body-small text-[#888] hover:text-[#D4AF37] transition-colors">
+              Términos y Condiciones
             </a>
           </div>
         </div>

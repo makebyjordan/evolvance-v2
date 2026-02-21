@@ -10,10 +10,21 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow: auto;
+}
+
 .App {
     min-height: 100vh;
     background: #0A0A0A;
     overflow-x: hidden;
+    padding-top: 80px; /* separa el contenido del navbar fijo */
+}
+
+@media (max-width: 640px) {
+    .App {
+        padding-top: 72px;
+    }
 }
 
 /* Smooth Scrolling */
