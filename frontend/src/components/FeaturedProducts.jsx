@@ -4,6 +4,13 @@ import { featuredProducts } from '../data/mockData';
 
 const FeaturedProducts = () => {
   const [activeDemo, setActiveDemo] = useState(null);
+  const handleDemoClick = (product) => {
+    if (product.demoType === 'voice') {
+      window.open('/#/demo', '_self');
+      return;
+    }
+    setActiveDemo(activeDemo === product.id ? null : product.id);
+  };
 
   return (
     <section id="productos" className="section-padding bg-[#0A0A0A] relative">
@@ -74,7 +81,7 @@ const FeaturedProducts = () => {
                   </a>
                 ) : (
                   <button
-                    onClick={() => setActiveDemo(activeDemo === product.id ? null : product.id)}
+                    onClick={() => handleDemoClick(product)}
                     className="btn-primary w-full justify-center group"
                   >
                     <Play className="w-4 h-4" />
